@@ -1,0 +1,73 @@
+%flex{
+  display: flex;
+}
+%flex__justify-start{
+  justify-content: flex-start;
+}
+%flex__justify-center{
+  justify-content: center;
+}
+%flex__justify-end{
+  justify-content: flex-end;
+}
+%flex__justify-space-between{
+  justify-content: space-between;
+}
+%flex__justify-space-around{
+  justify-content: space-around;
+}
+%flex__align-start{
+  align-items:flex-start;
+}
+%flex__align-center{
+  align-items:center;
+}
+%flex__align-end{
+  align-items:flex-end;
+}
+%flex__align-stretch{
+  align-items: stretch;
+}
+%flex__direction-column{
+  flex-direction: column;
+}
+%flex__wrap-wrap{
+  flex-wrap: wrap;
+}
+
+
+
+
+%max-width100{
+  max-width: 100%;
+}
+%marg-auto{
+  margin-right: auto;
+  margin-left: auto;
+}
+
+%forms{
+  background: rgba(0,0,0,0.1);
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  &:focus{
+    background: #fff;
+  }
+}
+%color__white-rgba07{
+  color: rgba(255,255,255,0.7);
+}
+%uppercase{
+  text-transform: uppercase;
+}
+%font_lato-black{
+  font-family: "Lato-Black", sans-serif;
+}
+%font_lato-light{
+  font-family: "Lato-Light", sans-serif;
+}
+%font_lato{
+  font-family: "Lato", sans-serif;
+}
+

@@ -1,0 +1,84 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-User {
+  background-image: url(../img/sprite.png);
+  background-position: 0px 0px;
+  width: 150px;
+  height: 150px;
+}
+.icon-arrowleft {
+  background-image: url(../img/sprite.png);
+  background-position: -266px -165px;
+  width: 34px;
+  height: 56px;
+}
+.icon-arrowright {
+  background-image: url(../img/sprite.png);
+  background-position: -266px -89px;
+  width: 34px;
+  height: 56px;
+}
+.icon-facebook {
+  background-image: url(../img/sprite.png);
+  background-position: -170px -170px;
+  width: 8px;
+  height: 15px;
+}
+.icon-g {
+  background-image: url(../img/sprite.png);
+  background-position: -170px -90px;
+  width: 15px;
+  height: 16px;
+}
+.icon-giars {
+  background-image: url(../img/sprite.png);
+  background-position: -170px 0px;
+  width: 76px;
+  height: 70px;
+}
+.icon-lightball {
+  background-image: url(../img/sprite.png);
+  background-position: -266px 0px;
+  width: 46px;
+  height: 69px;
+}
+.icon-lin {
+  background-image: url(../img/sprite.png);
+  background-position: -205px -90px;
+  width: 14px;
+  height: 14px;
+}
+.icon-mwand {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -170px;
+  width: 65px;
+  height: 65px;
+}
+.icon-rocket {
+  background-image: url(../img/sprite.png);
+  background-position: -85px -170px;
+  width: 65px;
+  height: 64px;
+}
+.icon-twit {
+  background-image: url(../img/sprite.png);
+  background-position: -170px -126px;
+  width: 15px;
+  height: 12px;
+}

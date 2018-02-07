@@ -1,0 +1,119 @@
+.work {
+  background: url("../img/work_bg.png") no-repeat;
+  background-size: cover;
+  & .h6 {
+    color: #fff;
+  }
+}
+.portfolio{
+  @extend %marg-auto;
+  @extend %flex;
+  @extend %flex__justify-center;
+  @extend %flex__align-center;
+  @extend %flex__direction-column;
+  width: 100%;
+  max-width: 1120px;
+  padding-top: 56px;
+  &__nav{
+    @extend %flex;
+    @extend %flex__align-center;
+    @extend %flex__justify-space-between;
+    width: 100%;
+    max-width: 1100px;
+    height: 100px;
+    padding: 0 20px;
+    border-top: 2px solid #94b963;
+    border-bottom: 2px solid #94b963;
+  }
+  &__menu{
+    @extend %flex;
+    @extend %flex__align-center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    &__link{
+      @extend %flex;
+      @extend %flex__justify-center;
+      @extend %flex__align-center;
+      margin: 0 15px;
+      padding: 0 10px;
+      height: 38px;
+      border-radius: 5px;
+      letter-spacing: 0.5px;
+      & a{
+        @extend %flex;
+        @extend %flex__justify-center;
+        @extend %flex__align-center;
+        height: 100%;
+        width: 100%;
+        text-decoration: none;
+        color: inherit;
+      }
+    }
+  }
+  &__project{
+    @extend %flex;
+    @extend %flex__justify-center;
+    @extend %flex__wrap-wrap;
+    padding-top: 40px;
+    max-width: 100%;
+    &__template{
+      @extend %flex__direction-column;
+      width: 260px;
+      height: 250px;
+      margin: 10px;
+      &__img{
+        position: relative;
+        height: 200px;
+        width: 100%;
+      }
+      &__name{
+        @extend %flex;
+        @extend %flex__justify-center;
+        @extend %flex__align-center;
+        @extend %uppercase;
+        @extend %font_lato;
+        position: relative;
+        color: #727272;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 58px;
+        background: #eee;
+        &:before{
+          content: "";
+          position: absolute;
+          top:-35px;
+          border: 18px solid transparent;
+          border-bottom-color: #eee;
+        }
+      }
+      &:hover img{
+        opacity: 0.7;
+      }
+      &:hover .portfolio__img-hover{
+        @extend %flex;
+      }
+    }
+  }
+}
+.portfolio__img-hover{
+  @extend %flex__justify-center;
+  display: none;
+  position: absolute;
+  top: calc(50% - 25px);
+  left: calc(50% - 25px);
+  height: 50px;
+  width: 50px;
+  align-items: center;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  font-size: 24px;
+  z-index: 5;
+  filter: opacity(80%);
+}
+.blocks,.portfolio{
+  padding-bottom: 110px;
+}
+input[type="radio"]:checked + label{
+  background-color: #f5c149;
+}

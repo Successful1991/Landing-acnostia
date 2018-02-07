@@ -1,0 +1,86 @@
+@import "_extend";
+@import "_menu";
+@import "_services";
+@import "_about";
+@import "_work";
+@import "_contact";
+@import "_footer";
+
+@font-face {
+  font-family: "Lato-Black";
+  src: url(../font/Lato-Black.ttf);
+}
+@font-face {
+  font-family: "Lato";
+  src: url(../font/Lato-Regular.ttf);
+}
+@font-face {
+  font-family: "Lato-Light";
+  src: url(../font/Lato-Light.ttf);
+}
+@font-face {
+  font-family: "Damion-Regular";
+  src: url(../font/Damion-Regular.ttf);
+}
+html{
+  box-sizing: border-box;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  outline: none;
+};
+body{
+  overflow-x: hidden;
+  color: #fff;
+}
+.section{
+  @extend %flex__direction-column;
+  @extend %flex__align-center;
+  @extend %font_lato;
+  min-height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+.sl__text{
+  @extend %flex;
+  @extend %flex__justify-space-around;
+  @extend %flex__align-stretch;
+  position: absolute;
+  top: calc(50vh - 5vw);
+  left: calc(50vw - 29.28vw );
+  height: auto;
+  min-width: 200px;
+  flex-basis: 840px;
+  background-color: rgba(255,255,255,0.3);
+  border-radius: 5px;
+  color: #74c7d5;
+  &>div{
+    @extend %flex;
+    @extend %flex__justify-center;
+    @extend %flex__direction-column;
+    width: 50%;
+  }
+  &-left{
+    @extend %flex__align-end;
+    @extend %font_lato-light;
+    font-size: 4.0625vw;
+    line-height: 3.5vw;
+    padding-left: 39px;
+    padding-right: 12px;
+    &>p:nth-child(1){
+      @extend %uppercase;
+    }
+  }
+  &-right{
+    @extend %flex__align-start;
+    @extend %font_lato-black;
+    @extend %uppercase;
+    height: 100%;
+    padding-right: 39px;
+    font-size: 8.65vw;
+    font-weight: 400;
+    padding-left: 12px;
+  }
+}

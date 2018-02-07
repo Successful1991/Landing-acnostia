@@ -1,0 +1,108 @@
+%opacity-2s{
+  -webkit-transition: opacity 2s;
+  -o-transition: opacity 2s;
+  transition: opacity 2s;
+}
+body{
+  font-size: 16px;
+}
+#slide1{
+  background-image: url("../img/Layer4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#slide2{
+  background-image: url("../img/rawpixel.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#slide3{
+  background-image: url("../img/stefan.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.sl{
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  position: relative;
+
+}
+.sl__slider{
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  left: 0;
+  margin: 0;
+  padding: 0;
+}
+.sl__img{
+  @extend %opacity-2s;
+  & img{
+    height: 100vh;
+    width: 100vw;
+  }
+}
+.active{
+  @extend %opacity-2s;
+  opacity: 1;
+}
+.sl__next,.sl__prev{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 56px;
+  width: 56px;
+  top:calc(50% - 28px);
+  color: #ffffff;
+  opacity: 0.5;
+  z-index: 500;
+  box-sizing: border-box;
+}
+.sl__next{
+  right: 50px;
+
+}
+.sl__prev{
+  left: 50px;
+}
+.sl__next::before,.sl__prev::before{
+  position: absolute;
+  content: "";
+  height: 64px;
+  width: 64px;
+  background-size: 32px;
+  background-repeat: no-repeat;
+  background-position: center center;
+ }
+.sl__next::before{
+  background-image: url("../img/arrowright.png");
+}
+.sl__prev::before{
+  background-image: url("../img/arrowleft.png");
+}
+.sl__bots{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
+  bottom: 91px;
+  &>div{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #fff;
+    opacity: 0.5;
+    margin: 19px;
+  }
+  &-active{
+    opacity: 1!important;
+    background-color: #74c7d5!important;
+  }
+}

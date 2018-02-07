@@ -1,0 +1,21 @@
+
+footer{
+  @extend %flex;
+  @extend %flex__justify-center;
+  @extend %flex__align-center;
+  height: 150px;
+  width: 100vw;
+  background-color: #3ea093;
+  & .social{
+    margin-top: 0;
+    &__icon{
+      height: 60px;
+      width: 60px;
+      background: #298378;
+      margin: 20px;
+      & img{
+        height: 40%;
+      }
+    }
+  }
+}

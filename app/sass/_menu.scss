@@ -1,0 +1,49 @@
+.nav{
+  @extend %flex;
+  @extend %flex__justify-space-around;
+  @extend %flex__align-center;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  color: #fff;
+  z-index: 5;
+  background: rgba(0, 0, 0, 0.3);
+  & a{
+    text-decoration: none;
+    color: inherit;
+  }
+  &-bg{
+    width: 100vw;
+    height: 169px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, #2c3e50 100%);
+    opacity: 0.55;
+  }
+
+}
+.nav__logo{
+  font-family: "Damion", sans-serif;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 60px;
+}
+.menu__items{
+  @extend %flex;
+  @extend %flex__align-start;
+}
+.menu__item{
+  @extend %flex;
+  @extend %flex__justify-center;
+  @extend %flex__align-center;
+  @extend %font_lato;
+  width: 103px;
+  height: 83px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 60px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  text-transform: capitalize;
+  &:hover{
+    background-color: rgba(255,255,255,0.1);
+  }
+}

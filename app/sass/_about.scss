@@ -1,0 +1,78 @@
+.about{
+  background: #6D5365 url("../img/about_bg.png") no-repeat;
+  background-size: cover;
+  &>.blocks{
+    margin-top: 70px;
+  }
+  & .block{
+    background-color: rgba(77,63,75,0.5);
+    &:hover .twit{
+      background-color: #74c7d5;
+    }
+    &:hover .facebook{
+      background-color: #4f689e;
+    }
+    &:hover .google{
+      background-color: #df5c64;
+    }
+    &:hover .link{
+      background-color: #3e61af;
+    }
+  }
+  & .block__img{
+    width: 150px;
+    height: 150px;
+    box-shadow: 0 0 0 3px #fff, 0 0 0 8px #a1859e;
+    overflow: hidden;
+    opacity: 1;
+  }
+  & .block__h{
+    @extend %font_lato-black;
+    font-weight: 400;
+    font-size: 25px;
+    color: #c7b6c5;
+    margin-bottom: 0;
+  }
+  & .block__p{
+    text-transform: capitalize;
+    color: #a1ca6c;
+  }
+}
+.about__team{
+  @extend %flex;
+  @extend %flex__justify-center;
+  @extend %flex__align-center;
+  @extend %uppercase;
+  @extend %font_lato-black;
+  position: relative;
+  width: 276px;
+  height: 50px;
+  background: #a1ca6c;
+  border-radius: 5px;
+  margin-top: 60px;
+  font-size: 25px;
+  &:before{
+    content: "";
+    position: absolute;
+    top: 50px;
+    left:calc(50% - 15px);
+    border: 15px solid transparent ;
+    border-top-color: #a1ca6c;
+  }
+}
+.social{
+  @extend %flex;
+  margin-top: 32px;
+  &__icon {
+    @extend %flex;
+    @extend %flex__justify-center;
+    @extend %flex__align-center;
+    width: 30px;
+    height: 30px;
+    background-color: #a1859e;
+    border-radius: 50%;
+    color: #fff;
+    margin: 9px;
+  }
+}
+
